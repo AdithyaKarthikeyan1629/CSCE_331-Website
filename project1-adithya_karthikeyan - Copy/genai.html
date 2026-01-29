@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ STROUD: THE 4 PICK MELTDOWN 🔥</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+            background: linear-gradient(180deg, #ff0000 0%, #ff6600 50%, #000000 100%);
+            color: #fff;
+            overflow-x: hidden;
+            animation: shake 3.5s;
+        }
+        
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        
+        /* THE PROMPT BOX */
+        .prompt-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: rgba(0,0,0,0.9);
+            border: 5px solid #ff0000;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 20px #ff0000;
+        }
+        
+        .prompt-label {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff0000;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 0 #000;
+            text-align: center;
+        }
+        
+        #promptBox {
+            width: 100%;
+            height: 150px;
+            background: #1a1a1a;
+            color: #00ff00;
+            border: 3px dashed #ff6600;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 12px;
+            resize: none;
+            overflow-y: scroll;
+        }
+        
+        /* NAVIGATION BAR OF DOOM */
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                #000,
+                #000 10px,
+                #ff0000 10px,
+                #ff0000 20px
+            );
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffff00;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+        }
+        
+        .nav-bar h2 {
+            color: #ffff00;
+            font-size: 32px;
+            text-shadow: 4px 4px 0 #ff0000;
+            margin-bottom: 15px;
+            animation: blink 0.5s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(to bottom, #ff0000, #990000);
+            color: white;
+            border: 3px solid #ffff00;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transform: skew(-10deg);
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 5px 5px 0 #000;
+        }
+        
+        .nav-btn:hover {
+            transform: skew(-10deg) scale(1.2) rotate(5deg);
+            background: linear-gradient(to bottom, #ffff00, #ff6600);
+            color: black;
+            box-shadow: 8px 8px 0 #ff0000;
+        }
+        
+        /* MAIN CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0,0,0,0.8);
+            border: 10px double #ff0000;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: "🔥";
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.3;
+            top: 10px;
+            left: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .hero::after {
+            content: "🗑️";
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.3;
+            bottom: 10px;
+            right: 10px;
+            animation: float 3s ease-in-out infinite reverse;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        h1 {
+            font-size: 48px;
+            color: #ff0000;
+            text-shadow: 5px 5px 0 #ffff00;
+            margin-bottom: 20px;
+            transform: rotate(-2deg);
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #ff6600;
+            font-weight: bold;
+            background: #000;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ff0000;
+        }
+        
+        .section {
+            background: rgba(0,0,0,0.9);
+            border: 5px solid #ff6600;
+            margin: 30px 0;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .section h2 {
+            color: #ffff00;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 5px dashed #ff0000;
+            padding-bottom: 10px;
+        }
+        
+        .stat-box {
+            background: #330000;
+            border: 3px solid #ff0000;
+            padding: 20px;
+            margin: 20px 0;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            color: #00ff00;
+            font-weight: bold;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        
+        .int-card {
+            background: linear-gradient(135deg, #330000 0%, #000000 100%);
+            border-left: 10px solid #ff0000;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 20px;
+            position: relative;
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .int-number {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #ff0000;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+            border: 3px solid #ffff00;
+        }
+        
+        .defense-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        
+        .defense-table th {
+            background: #00ff00;
+            color: #000;
+            padding: 15px;
+            text-transform: uppercase;
+        }
+        
+        .defense-table td {
+            border: 2px solid #ff0000;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .defense-table tr:nth-child(even) {
+            background: #330000;
+        }
+        
+        .highlight {
+            background: #ffff00;
+            color: #000;
+            padding: 2px 5px;
+            font-weight: bold;
+            display: inline-block;
+            transform: rotate(-1deg);
+        }
+        
+        .rage-meter {
+            width: 100%;
+            height: 40px;
+            background: #333;
+            border: 3px solid #fff;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .rage-fill {
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                #ff0000,
+                #ff0000 20px,
+                #ff6600 20px,
+                #ff6600 40px
+            );
+            width: 0%;
+            animation: fillRage 3s forwards;
+        }
+        
+        @keyframes fillRage {
+            to { width: 100%; }
+        }
+        
+        .final-score {
+            font-size: 72px;
+            text-align: center;
+            color: #ff0000;
+            font-weight: bold;
+            text-shadow: 5px 5px 0 #000;
+            animation: pulse 1s infinite;
+            margin: 30px 0;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: #333;
+            border: 5px dashed #ff0000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            font-size: 48px;
+        }
+        
+        marquee {
+            background: #000;
+            color: #ff0000;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            border-top: 3px solid #ff0000;
+            border-bottom: 3px solid #ff0000;
+        }
+        
+        .emoji-rain {
+            position: fixed;
+            font-size: 30px;
+            pointer-events: none;
+            animation: fall linear forwards;
+            z-index: 9999;
+        }
+        
+        @keyframes fall {
+            to { transform: translateY(100vh) rotate(360deg); }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #000;
+            border-top: 10px solid #ff0000;
+            margin-top: 50px;
+        }
+        
+        .burn-counter {
+            font-size: 24px;
+            color: #ff6600;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- THE PROMPT CONTAINER -->
+    <div class="prompt-container">
+        <div class="prompt-label">⚠️ THE ORIGINAL PROMPT THAT CAUSED THIS DISASTER ⚠️</div>
+        <textarea id="promptBox" readonly>I want you to go full FLAME mode. I want you to create a full website about CJ Stroud's life and end it with him doing 4 INTERCEPTIONS AGAINS THTE PATRIOTS and LOSING WITH THE BEST DEFENSE IN THE LEAGUEEEEEEE (ADD STATS AND SHOW HOW GOOD THEY ARE). DO this in pure HTML, CSS and JS through AI-generated inline CSS instead of from the required external CSS files . Also near the top , I want the prompt exactly as It is shown. To do this, create a textbox and put it in there. If the prompt is too long, pleas euse a multiline textbox and add a scrollbar. I also want a navigation bar and I want it to be creative yet funny as well. There needs to be a button called Landing that opens index.html, Portfolio that opens portfolio.html. Qualifications that opens Qualifications.html, Service that Opens Service.html. Also add funny pictures and don't make me download any image files (that means links). If you think it will break, then don't add any</textarea>
+    </div>
+
+    <!-- NAVIGATION BAR OF SHAME -->
+    <nav class="nav-bar">
+        <h2>🔥 NAVIGATION OF NIGHTMARES 🔥</h2>
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-btn" onclick="alert('You are already at the landing page of shame!');">🏠 Landing (Index)</a>
+            <a href="portfolio.html" class="nav-btn" onclick="alert('Nothing but interceptions in this portfolio!');">📁 Portfolio (of Picks)</a>
+            <a href="Qualifications.html" class="nav-btn" onclick="alert('Qualified to throw 4 interceptions!');">🎓 Qualifications (QB?)</a>
+            <a href="Service.html" class="nav-btn" onclick="alert('Serving picks to the Patriots D!');">🛎️ Service (to Patriots DBs)</a>
+        </div>
+        <marquee scrollamount="20">WARNING: THIS PAGE CONTAINS GRAPHIC DEPICTIONS OF TURNOVERS. VIEWERS WITH WEAK STOMACHS OR TEXANS FANS SHOULD PROCEED WITH CAUTION.</marquee>
+    </nav>
+
+    <div class="container">
+        
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <h1>CJ STROUD: FROM HEISMAN HOPEFUL<br>TO 4-PICK NIGHTMARE 💀</h1>
+            <div class="subtitle">"With the #1 Defense in the Universe... Somehow We Still Lost to the Patriots"</div>
+            <div class="image-placeholder">🤦‍♂️🗑️🏈🔥</div>
+            <p style="font-size: 20px; margin-top: 20px; color: #ff9999;">
+                A tragic tale of how one man managed to throw 4 interceptions against a team that scored 13 points 
+                while having the literal best defense in the NFL. Yes, this actually happened (in an alternate reality/nightmare).
+            </p>
+        </div>
+
+        <!-- EARLY LIFE SECTION (THE BEGINNING OF THE END) -->
+        <div class="section">
+            <h2>📚 Chapter 1: The Early Years (Pre-Disaster)</h2>
+            <p style="font-size: 18px; line-height: 1.8;">
+                Born in Rancho Cucamonga, California, young CJ Stroud showed promise. He could throw a football 
+                over them mountains! Little did anyone know that this golden arm would one day gift 4 footballs 
+                to the New England Patriots defense like it was Christmas morning at Bill Belichick's house.
+            </p>
+            <div class="stat-box">
+                <span class="stat-number">2019</span><br>
+                <span class="stat-label">Last Year Without Shame (High School)</span>
+            </div>
+        </div>
+
+        <!-- OHIO STATE SECTION -->
+        <div class="section">
+            <h2>🌰 Chapter 2: Ohio State Dominance (The Calm Before the Storm)</h2>
+            <p style="font-size: 18px; line-height: 1.8;">
+                At Ohio State, Stroud was ELITE. He broke records. He threw touchdowns. He did NOT throw 4 interceptions 
+                to the 2023 Patriots defense because that would be impossible and absurd... or so we thought.
+            </p>
+            <div class="image-placeholder">🌰➡️🐂</div>
+            <ul style="font-size: 20px; margin: 20px; list-style-type: '🏆 ';">
+                <li>4th in Heisman 2021</li>
+                <li>4th in Heisman 2022 (Notice the pattern? Number 4 haunts him)</li>
+                <li>Set school records for passing yards</li>
+                <li>ZERO 4-interception games in college (foreshadowing is a literary device)</li>
+            </ul>
+        </div>
+
+        <!-- THE DEFENSE SECTION (THE TRAGEDY) -->
+        <div class="section" style="border-color: #00ff00;">
+            <h2 style="color: #00ff00;">🛡️ Chapter 3: The Texans Defense (ELITE BEYOND COMPREHENSION)</h2>
+            <p style="font-size: 20px; color: #00ff00; font-weight: bold; margin-bottom: 20px;">
+                BEFORE WE GET TO THE DISASTER, LET'S LOOK AT WHAT HE HAD WORKING FOR HIM:
+            </p>
+            
+            <table class="defense-table">
+                <tr>
+                    <th>Category</th>
+                    <th>Stat</th>
+                    <th>NFL Rank</th>
+                    <th>Translation</th>
+                </tr>
+                <tr>
+                    <td>Points Allowed/Game</td>
+                    <td>16.5</td>
+                    <td>#1</td>
+                    <td>Elite</td>
+                </tr>
+                <tr>
+                    <td>Sacks</td>
+                    <td>65</td>
+                    <td>#1</td>
+                    <td>Quarterback is SAFE</td>
+                </tr>
+                <tr>
+                    <td>Turnovers Forced</td>
+                    <td>35</td>
+                    <td>#1</td>
+                    <td>Defense does the work!</td>
+                </tr>
+                <tr>
+                    <td>Pass Defense Rating</td>
+                    <td>78.4</td>
+                    <td>#1</td>
+                    <td>DBs are LOCKED IN</td>
+                </tr>
+                <tr>
+                    <td>DVOA</td>
+                    <td>-25%</td>
+                    <td>#1</td>
+                    <td>Analytics love them</td>
+                </tr>
+            </table>
+
+            <div style="background: #003300; padding: 20px; border: 3px solid #00ff00; margin-top: 20px;">
+                <p style="font-size: 24px; font-weight: bold; text-align: center;">
+                    WITH THIS DEFENSE, A LITERAL TRAFFIC CONE COULD WIN 10 GAMES.<br>
+                    AND YET... 4 INTERCEPTIONS. TO THE PATRIOTS. WHO SCORED 13 POINTS.
+                </p>
+            </div>
+        </div>
+
+        <!-- THE MELTDOWN SECTION -->
+        <div class="section" style="border-color: #ff0000; background: #220000;">
+            <h2 style="color: #ff0000; animation: blink 0.3s infinite;">💀 Chapter 4: THE MELTDOWN (4 Picks vs Patriots)</h2>
+            
+            <div class="rage-meter">
+                <div class="rage-fill"></div>
+            </div>
+            <p style="text-align: center; font-size: 12px; color: #ff6666;">FAN RAGE LEVEL</p>
+
+            <div class="final-score">
+                FINAL: Patriots 28<br>
+                Texans 16<br>
+                <span style="font-size: 36px; color: #ffff00;">(CJ Stroud: 4 INTS)</span>
+            </div>
+
+            <h3 style="color: #ffff00; font-size: 28px; margin: 30px 0; text-align: center;">THE FOUR HORSEMEN OF THE APOCALYPSE:</h3>
+
+            <div class="int-card">
+                <div class="int-number">1</div>
+                <h3 style="color: #ff0000;">1st Quarter: "The Confidence Killer"</h3>
+                <p><strong>Down:</strong> 1st & 10 from NE 36<br>
+                <strong>Target:</strong>Triple-covered Kirk (somehow)<br>
+                <strong>Result:</strong> PICKED by rookie CB who started playing football last Tuesday<br>
+                <strong>Analyst Quote:</strong> <em>"He's just shaking off the rust!" (Narrator: He was not)</em></p>
+            </div>
+
+            <div class="int-card">
+                <div class="int-number">2</div>
+                <h3 style="color: #ff0000;">2nd Quarter: "The Momentum Killer"</h3>
+                <p><strong>Down:</strong> 1st & 10 from own 25<br>
+                <strong>Target:</strong> Idk bro (open, waving hands)<br>
+                <strong>Result:</strong> PICKED 6!!!!!!!!!! by linebacker who hasn't caught a ball since high school<br>
+                <strong>Analyst Quote:</strong> <em>"He forced that one a bit..." (Understatement of the century)</em></p>
+            </div>
+
+            <div class="int-card">
+                <div class="int-number">3</div>
+                <h3 style="color: #ff0000;">3rd Quarter: "The Backbreaker"</h3>
+                <p><strong>Down:</strong> 1st & 10 from Pat 49<br>
+                <strong>Target:</strong> ? ? ? (Even CCTV couldn't find the intended receiver)<br>
+                <strong>Result:</strong> Returned. I give up.<br>
+                <strong>Analyst Quote:</strong> <em>"What is he seeing out there?" (The ghost of interceptions past)</em></p>
+            </div>
+
+            <div class="int-card" style="border-color: #000; background: #000;">
+                <div class="int-number">4</div>
+                <h3 style="color: #ff0000; font-size: 32px;">4th Quarter: "THE FINAL BOS-... NOOOO"</h3>
+                <p><strong>Down:</strong> 4th & Goal from NE 3 (GAME ON THE LINE.. not really)<br>
+                <strong>Target:</strong> Offensive Lineman's Helmet (deflected)<br>
+                <strong>Result:</strong> PICKED. Ballgame. Season over. Legacy questioned.<br>
+                <strong>Analyst Quote:</strong> <em><span style="font-size: 24px;">"I... I have no words. With THIS defense? Against THIS team?"</span></em></p>
+            </div>
+
+            <div style="background: #ff0000; color: #000; padding: 30px; margin-top: 30px; text-align: center; border: 5px dashed #ffff00;">
+                <h3 style="font-size: 36px; margin-bottom: 15px;">THE STATS THAT DEFY LOGIC</h3>
+                <p style="font-size: 24px; font-weight: bold;">
+                    Defense held Patriots to 28 points (Stroud throwing TD for the other team fr)<br>
+                    Defense held Patriots to 284 total yards (THEY SCORED ALMOST DOUBLE OF US)<br>
+                    Defense created 3 turnovers (should win 100% of games, but not us)<br>
+                    <span style="font-size: 32px; display: block; margin-top: 20px;">BUT CJ STROUD SAID "HOLD MY COFFEE" AND THREW 4 INTERCEPTIONS</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- AFTERMATH -->
+        <div class="section">
+            <h2>⚰️ Chapter 5: The Aftermath</h2>
+            <p style="font-size: 20px; line-height: 2;">
+                The city of Houston entered a state of shock. How does one process having the 
+                <span class="highlight">#1 DEFENSE IN THE LEAGUE</span> and losing to a team that 
+                started a quarterback they found at a farmer's market earlier that morning?
+            </p>
+            
+            <div class="image-placeholder">😭🔥🏈💸</div>
+            
+            <div class="burn-counter" id="burnCounter">
+                Days since 4-INT game: <span id="daysSince">10</span><br>
+                Therapy bills generated: $4,000,000<br>
+                Times watched film: 0 (too painful)
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <h2 style="font-size: 48px; color: #ff0000; text-shadow: 3px 3px 0 #000;">🔥 BURNED 🔥</h2>
+        <p style="font-size: 18px; margin-top: 20px;">
+            This website is purely satirical flame content created for entertainment purposes.<br>
+            CJ Stroud is actually an elite quarterback and this is a nightmare scenario.<br>
+            But if it happens... we have this page ready. 👀
+        </p>
+        <p style="margin-top: 20px; color: #666; font-size: 12px;">
+            © 2026 The Department of Shameful Quarterback Performances | 
+            Inspired by the best defense being wasted by the worst timing
+        </p>
+    </footer>
+
+    <script>
+        // Make the prompt box work
+        document.getElementById('promptBox').value = `I want you to go full FLAME mode. I want you to create a full website about CJ Stroud's life and end it with him doing 4 INTERCEPTIONS AGAINS THTE PATRIOTS and LOSING WITH THE BEST DEFENSE IN THE LEAGUEEEEEEE (ADD STATS AND SHOW HOW GOOD THEY ARE). DO this in pure HTML, CSS and JS through AI-generated inline CSS instead of from the required external CSS files . Also near the top , I want the prompt exactly as It is shown. To do this, create a textbox and put it in there. If the prompt is too long, pleas euse a multiline textbox and add a scrollbar. I also want a navigation bar and I want it to be creative yet funny as well. There needs to be a button called Landing that opens index.html, Portfolio that opens portfolio.html. Qualifications that opens Qualifications.html, Service that Opens Service.html. Also add funny pictures and don't make me download any image files (that means links). If you think it will break, then don't add any`;
+
+        // Emoji rain effect
+        const emojis = ['🔥', '🗑️', '🏈', '❌', '💀', '😭', '🤦'];
+        
+        setInterval(() => {
+            const emoji = document.createElement('div');
+            emoji.classList.add('emoji-rain');
+            emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = Math.random() * 100 + 'vw';
+            emoji.style.animationDuration = Math.random() * 3 + 2 + 's';
+            document.body.appendChild(emoji);
+            
+            setTimeout(() => {
+                emoji.remove();
+            }, 5000);
+        }, 300);
+
+        // Calculate fake days since disaster
+        const startDate = new Date('2026-01-18');
+        const today = new Date();
+        const diffTime = Math.abs(today - startDate);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        document.getElementById('daysSince').innerText = diffDays;
+
+        // Console easter egg
+        console.log('%c4 INTERCEPTIONS', 'font-size: 50px; color: red; font-weight: bold;');
+        console.log('%cWHY THO', 'font-size: 30px; color: orange;');
+        console.log('%cTHE DEFENSE WAS #1', 'font-size: 25px; color: yellow;');
+        
+        // Rage click handler
+        document.addEventListener('click', (e) => {
+            if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON' && e.target.tagName !== 'TEXTAREA') {
+                const rage = document.createElement('div');
+                rage.innerText = 'PICK!';
+                rage.style.position = 'fixed';
+                rage.style.left = e.clientX + 'px';
+                rage.style.top = e.clientY + 'px';
+                rage.style.color = '#ff0000';
+                rage.style.fontSize = '24px';
+                rage.style.fontWeight = 'bold';
+                rage.style.pointerEvents = 'none';
+                rage.style.zIndex = '9999';
+                rage.style.textShadow = '2px 2px 0 #000';
+                document.body.appendChild(rage);
+                
+                setTimeout(() => rage.remove(), 1000);
+            }
+        });
+    </script>
+</body>
+</html>
